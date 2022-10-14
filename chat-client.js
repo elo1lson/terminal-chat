@@ -16,6 +16,7 @@ socket.on('connect', () => {
   }
 
 })
+
 socket.on('newUser', user => {
   console.log(chalk.gray(user.timestamp) + ' | ' + chalk.green(process.env.USER) + ' acaba de entrar no chat');
 })
